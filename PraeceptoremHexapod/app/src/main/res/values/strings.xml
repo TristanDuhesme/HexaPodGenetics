@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Praeceptorem Hexapod</string>
+    <string name="avancer">Avancer</string>
+    <string name="reculer">Reculer</string>
+    <string name="debout">Debout</string>
+    <string name="gauche">Gauche</string>
+    <string name="droite">Droite</string>
+</resources>

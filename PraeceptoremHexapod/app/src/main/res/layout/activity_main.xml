@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tristanduhesme.praeceptoremhexapod.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/flicDeClasse"
+            android:adjustViewBounds="true"
+            android:layout_margin="10dp"
+            android:contentDescription="Logo de l\'application"
+            android:src="@drawable/hexapodlogo" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--<TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/welcomeMessage"
+                android:textAlignment="center"
+            android:textColor="#112233"
+            android:layout_weight="3"
+            android:textSize="20dp" />
+                -->
+            <TableLayout
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:stretchColumns="*">
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:weightSum="4">
+                    <SeekBar
+                        android:id="@+id/vitesseViewId"
+                        android:max="4"
+                        android:min="1"
+                        android:layout_width ="match_parent"
+                        android:progress="1"
+                        android:layout_weight="3"/>
+                    <TextView
+                        android:id="@+id/vitesseValueViewId"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+                    <Button
+                        android:id="@+id/avancerViewId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:textSize="17dp"
+                        android:text="@string/avancer" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+                    <Button
+                        android:id="@+id/gaucheViewId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:textSize="17dp"
+                        android:text="@string/gauche" />
+                    <Button
+                        android:id="@+id/deboutViewId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/debout"
+                        android:textSize="17dp"
+                        android:layout_weight="6" />
+                    <Button
+                        android:id="@+id/droiteViewId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/droite"
+                        android:textSize="17dp"
+                        android:layout_weight="6" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+                    <Button
+                        android:id="@+id/reculerViewId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:textSize="17dp"
+                        android:text="@string/reculer"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="3">
+                        <TextView
+                            android:id="@+id/console"
+                            android:layout_width = "match_parent"
+                            android:layout_height = "40dp"
+                            android:layout_weight = "1"
+                            android:textSize="10dp"
+                            android:scrollbars="vertical"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
